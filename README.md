@@ -4,12 +4,14 @@ This is the TensorFlow implementation of the IEEE CVPR 2020 paper "ARShadowGAN: 
 ![overview](illustration/overview.png)
 
 ## Requirements:
+
 * CUDA (9.0)
 * cuDNN (7.4.1)
 * tensorflow-gpu (1.12.0)
 * opencv-python (4.1.1.26)
 * numpy (1.16.5)
 * python (3.5.4)
+
 This code has been tested under Windows 10 and Ubuntu 16.04 successfully with all the requirements.
 
 ## Shadow-AR Dataset
@@ -38,7 +40,7 @@ We provide the pre-trained model of TensorFlow PB format. Download the file [mod
 
 1. Run in terminal:
 ```bash
-git clone https://github.com/ldq9526/ARShadowGAN
+git clone https://github.com/ldq9526/ARShadowGAN.git
 cd ARShadowGAN
 ```
 
