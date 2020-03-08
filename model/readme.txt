@@ -1,0 +1,1 @@
+Place pre-trained model 'model.pb' here.
