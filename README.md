@@ -1,7 +1,7 @@
 # ARShadowGAN
 
 This is the TensorFlow implementation of the IEEE CVPR 2020 paper "ARShadowGAN: Augmented Reality Shadow Generative Adversarial Network for Single Light Scenes". The overview of ARShadowGAN is shown below.
-![overview](illustration/overview.pdf)
+![overview](illustration/overview.png)
 
 ## Requirements:
 * CUDA (9.0)
@@ -14,7 +14,7 @@ This code has been tested under Windows 10 and Ubuntu 16.04 successfully with al
 
 ## Shadow-AR Dataset
 
-Our Shadow-AR dataset is partially available. Download the file ![Shadow-AR.zip](https://drive.google.com/drive/folders/17S9p56iMEd7_l5-ZbNjd7Z3KhiKmW0k_?usp=sharing) and unzip it. Supervised data samples are shown below.
+Our Shadow-AR dataset is partially available. Download the file [Shadow-AR.zip](https://drive.google.com/drive/folders/17S9p56iMEd7_l5-ZbNjd7Z3KhiKmW0k_?usp=sharing) and unzip it. Supervised data samples are shown below.
 ![dataset](illustration/dataset.png)
 
 Shadow-AR contains five kinds of images and corresponding images in different directories have the same name:
@@ -32,7 +32,7 @@ Shadow-AR dataset is free for non-commercial research. You can use it for other 
 
 ## Pre-trained Model
 
-We provide the pre-trained model of TensorFlow PB format. Download the file ![model.pb](https://drive.google.com/drive/folders/17S9p56iMEd7_l5-ZbNjd7Z3KhiKmW0k_?usp=sharing) and place it in directory "model/".
+We provide the pre-trained model of TensorFlow PB format. Download the file [model.pb](https://drive.google.com/drive/folders/17S9p56iMEd7_l5-ZbNjd7Z3KhiKmW0k_?usp=sharing) and place it in directory "model/".
 
 ## Testing
 
@@ -46,8 +46,6 @@ cd ARShadowGAN
 
 3. Prepare image data containing input images and virtual object masks. Such as images in directory "data/":
 ![](data/noshadow/00716.jpg)![](data/mask/00716.jpg)
-![](data/noshadow/01764.jpg)![](data/mask/01764.jpg)
-
 
 4. Run in terminal:
 ```bash
