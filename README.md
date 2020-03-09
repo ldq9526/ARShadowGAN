@@ -24,19 +24,17 @@ Shadow-AR contains five kinds of images and corresponding images in different di
 |-|-|-|
 |noshadow|AR images without shadows of inserted virtual objects|Input|
 |mask|Mask images of inserted virtual objects|Input|
-|rshadow|Real-world shadow matting images|Intermediate output supervision|
-|robject|Mask images of real-world shadows' occluders|Intermediate output supervision|
-|shadow|AR images with plausible virtual object shadows|Target output supervision|
+|rshadow|Real-world shadow matting images|Attention supervision|
+|robject|Mask images of real-world shadows' occluders|Attention supervision|
+|shadow|AR images with plausible virtual object shadows|Output supervision|
 
-This current dataset configuration is used for ARShadowGAN training and evaluation. Images in directory "train/stage1/" are used for attention block training. Images in directory "train/stage2/" are used for generator and discriminator training. Images in "test/" are used for evaluation.
+The dataset configurations used for ARShadowGAN training and evaluation are comming soon.
 
 Shadow-AR dataset is free for non-commercial research. You can use it for other tasks, merge or re-split it as desired.
 
-## Pre-trained Model
+## Code and Pre-trained Model
 
-We provide the pre-trained model of TensorFlow PB format. Download the file [model.pb](https://drive.google.com/drive/folders/17S9p56iMEd7_l5-ZbNjd7Z3KhiKmW0k_?usp=sharing) and place it in directory "model/".
-
-## Code
+We provide the code for readers/researchers to reproduce our experimental results.
 
 1. Run in terminal:
 ```bash
@@ -44,9 +42,9 @@ git clone https://github.com/ldq9526/ARShadowGAN.git
 cd ARShadowGAN/
 ```
 
-2. Download pre-trained model (model.pb), then place it in directory "model/".
+2. Download the pre-trained model [model.pb](https://drive.google.com/drive/folders/17S9p56iMEd7_l5-ZbNjd7Z3KhiKmW0k_?usp=sharing) and place it in directory "model/".
 
-3. Prepare image data containing input images and virtual object masks. Such as images in directory "data/":
+3. Prepare image data containing input AR images and virtual object masks. Such as samples in directory "data/":
 ![](data/noshadow/00716.jpg)![](data/mask/00716.jpg)
 
 4. Run in terminal:
@@ -55,11 +53,11 @@ python test.py
 ```
 Generated attention maps and AR images with virtual object shadows will be saved in directory "output/".
 
-To test with custom image data, modify test.py line 13 (data_root = ....) and replace images in directories "noshadow/" and "mask/".
+To test with custom image data, modify test.py line 13 (data_root = ....) or replace images in directories "noshadow/" and "mask/".
 
 ## Note
 
-Images of Shadow-AR dataset are of size 640x480. Images input to ARShadowGAN should be resized to 256x256.
+Images input to ARShadowGAN should be resized to 256x256.
 
 ## Citation
 If you use the code or Shadow-AR dataset in your own research, please cite:
