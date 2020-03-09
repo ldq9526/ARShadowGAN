@@ -1,6 +1,6 @@
 # ARShadowGAN
 
-This is the TensorFlow implementation of the IEEE CVPR 2020 paper "ARShadowGAN: Augmented Reality Shadow Generative Adversarial Network for Single Light Scenes". The overview of ARShadowGAN is shown below.
+This is the TensorFlow implementation of the IEEE CVPR 2020 paper "ARShadowGAN: Shadow Generative Adversarial Network for Augmented Reality in Single Light Scenes". The overview of ARShadowGAN is shown below.
 ![overview](illustration/overview.png)
 
 ## Requirements:
@@ -36,12 +36,12 @@ Shadow-AR dataset is free for non-commercial research. You can use it for other 
 
 We provide the pre-trained model of TensorFlow PB format. Download the file [model.pb](https://drive.google.com/drive/folders/17S9p56iMEd7_l5-ZbNjd7Z3KhiKmW0k_?usp=sharing) and place it in directory "model/".
 
-## Testing
+## Code
 
 1. Run in terminal:
 ```bash
 git clone https://github.com/ldq9526/ARShadowGAN.git
-cd ARShadowGAN
+cd ARShadowGAN/
 ```
 
 2. Download pre-trained model (model.pb), then place it in directory "model/".
@@ -65,7 +65,7 @@ Images of Shadow-AR dataset are of size 640x480. Images input to ARShadowGAN sho
 If you use the code or Shadow-AR dataset in your own research, please cite:
 ```
 @InProceedings{liu2020,  
-  title = {ARShadowGAN: Augmented Reality Shadow Generative Adversarial Network for Single Light Scenes},
+  title = {ARShadowGAN: Shadow Generative Adversarial Network for Augmented Reality in Single Light Scenes},
   author = {Liu, Daquan and Long, Chengjiang and Zhang, Hongpan and Yu, Hanning and Dong, Xinzhi and Xiao, Chunxia},
   booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
   month = {June},
