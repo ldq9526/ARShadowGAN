@@ -34,7 +34,7 @@ Shadow-AR dataset is free for non-commercial research. You can use it for other 
 
 ## Code and Pre-trained Model
 
-We provide the code for readers/researchers to reproduce our experimental results.
+We provide the code and pre-trained model for readers/researchers to reproduce our experimental results.
 
 1. Run in terminal:
 ```bash
